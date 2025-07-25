@@ -31,7 +31,7 @@ class App(ctk.CTk):
         
         try:
             script_dir = os.path.dirname(os.path.realpath(__file__))
-            icon_path = os.path.join(script_dir, "ikon.png")
+            icon_path = os.path.join(script_dir, "icon.png") # You Must Assing A Icon
             self.tray_image = Image.open(icon_path)
         except:
             self.tray_image = Image.new('RGB', (64, 64), color='black')
